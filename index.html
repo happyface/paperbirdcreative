@@ -1,26 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Paperbird Creative</title>
+    <title>Paper Bird Creative</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='shortcut icon' href='/images/paperbirdcreative_fav.jpg'>
-    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-theme.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css"> -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-theme.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="../public/css/paperbird.css">
-	<script src="../public/javascript/jquery.min.js"></script>
-    <script src="../public/javascript/bootstrap.min.js"></script>
-	<script src="../public/javascripts/tab.js"></script>
+	<!-- <script src="../public/javascript/bootstrap.min.js"></script> -->
 	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-
-    <script> 
-		$(function(){
-		  $("#includedContent").load("../layout.html"); 
-		});
-    </script> 
+	<link rel="stylesheet" href="../public/css/bootstrap-image-gallery.min.css">
+	
+	<link rel="shortcut icon" href="../public/images/Favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
   </head>
   <body>
-	<div id="includedContent">
-		Home
+  	<div class="container-fluid" id="con">
+		&nbsp;
 	</div>
+	<div id="nav-wrapper">
+		<div data-spy="affix" data-offset-top="560" id="nav">
+			<div class="navbar navbar-static-top" id="nav">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="active">
+					  <a href="index.html">Work&nbsp;&nbsp;/ </a>
+					</li>
+					<li>
+					  <a href="resume.html">Resum&egrave;&nbsp;&nbsp;/ </a>
+					</li>
+					<li>
+					  <a href="about.html">About&nbsp;</a>
+					</li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" id="main-container">	
+		<div class="row">
+			<div class="col-xs-2">
+				<img src="../public/images/main_logo.png" alt="Paperbird Creative Logo" />
+				<div class="bottom-aligned-text">
+					  ALISSA PENDORF <br />
+					  GRAPHIC DESIGNER <br />
+					  ajp2487@gmail.com <br />
+					  LET'S BE IN TOUCH
+				</div>
+			</div>
+			<div class="col-xs-9">
+				<div class="container-fluid">
+					<div id="links">
+							<a href="public/images/portfolio/Chrysanthemum.jpg" title="Chrysanthemum" data-gallery>
+								<img src="http://www.makeathumbnail.com/thumbnails/image382612.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
+							<a href="public/images/portfolio/Desert.jpg" title="Desert" data-gallery>
+								<img src="http://www.makeathumbnail.com/thumbnails/image382613.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
+							<a href="public/images/portfolio/Hydrangeas.jpg" title="Hydrangeas" data-gallery>
+								<img src="http://www.makeathumbnail.com/thumbnails/image382614.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
+							<a href="public/images/portfolio/Jellyfish.jpg" title="Jellyfish" data-gallery>
+								<img src="http://www.makeathumbnail.com/thumbnails/image382616.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
+							<a href="public/images/Penguins.jpg" title="Penguins" data-gallery>
+								<img src="http://www.makeathumbnail.com/thumbnails/image382617.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+							Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../public/javascript/jquery.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+	<script src="../public/javascript/bootstrap.min.js"></script>
+	<!-- <script src="../public/javascript/tab.js"></script> -->
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="../public/javascript/bootstrap-image-gallery.min.js"></script>
+	<script src="../public/javascript/paperbird.js"></script>
+	<script src="../public/javascript/affix.js"></script>
+	
+	<script>
+		document.getElementById('links').onclick = function (event) {
+		event = event || window.event;
+		var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+		blueimp.Gallery(links, options);
+	};
+	</script>
   </body>
+</html>
+  
