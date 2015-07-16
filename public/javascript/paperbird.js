@@ -9,9 +9,14 @@ $('#nav').affix({
 });
 
 function enlargify(link) {
-	$('.thumbs').hide();
+	$('.thumb').hide();
 	$('#large-image').attr("src", link);
-	$('#links').css("height", "500px");
-	console.log(link);
-	$('#large-image').show();
+	$('#links').css("height", "400");
+	$('#large-image').css("height", "380");
+	$('#large-image-container').show();
+}
+
+function goBack() {
+	$('.thumb').show();
+	$('#large-image-container').hide();
 }

@@ -17,6 +17,16 @@ body {
 	padding-bottom: .75em;
 }
 
+#thumbnail {
+	color: blue;
+	cursor: pointer;
+}
+
+.left-right {
+	color: blue;
+	cursor: pointer;
+}
+
 .navbar-nav > li > a {
     color: #87c5ca;
 	font-size: 20pt;
@@ -31,11 +41,14 @@ body {
 
 #links {
   overflow-y: scroll;
-  height: 100px;
+  height: 400px;
+  padding: 1em 0;
 }
 
 .thumb {
-	height: 150px;
+	height: 100px;
+	padding-top: .5em;
+	cursor: pointer;
 }
 
 .link-slashes::after {
@@ -48,7 +61,7 @@ body {
 @media screen and (min-width: 750px) {
   #con {
 	background-color:  #009da4;
-	height: 20em;
+	height: 25em;
   }
   .link-slashes::after {
 	font-size: 25pt;
@@ -63,13 +76,13 @@ body {
 @media screen and (min-width: 900px) {
   #con {
 	background-color:  #009da4;
-	height: 30em;
+	height: 35em;
   }
   .link-slashes::after {
 	font-size: 30pt;
   }
   .thumb {
-	height: 125px;
+	height: 120px;
   }
   .navbar-nav > li > a,.navbar-nav > li > a:hover, .navbar-nav > li > a:focus  {
 	font-size: 30pt;
@@ -79,13 +92,13 @@ body {
 @media screen and (min-width: 1100px) {
   #con {
 	background-color:  #009da4;
-	height: 35em;
+	height: 40em;
   }
   .link-slashes::after {
 	font-size: 35pt;
   }
   .thumb {
-	height: 150px;
+	height: 140px;
   }
   .navbar-nav > li > a,.navbar-nav > li > a:hover, .navbar-nav > li > a:focus  {
 	font-size: 35pt;
@@ -95,33 +108,39 @@ body {
 @media screen and (min-width: 1400px) {
   #con {
 	background-color:  #009da4;
-	height: 36em;
+	height: 40em;
   }
   .link-slashes::after {
 	font-size: 40pt;
   }
   .thumb {
-	height: 200px;
+	height: 160px;
   }
   .navbar-nav > li > a,.navbar-nav > li > a:hover, .navbar-nav > li > a:focus  {
 	font-size: 40pt;
   }
 }
 
+@media screen and (min-width: 1900px) {
+  #con {
+	background-color:  #009da4;
+	height: 50em;
+  }
+  .link-slashes::after {
+	font-size: 50pt;
+  }
+  .thumb {
+	height: 180px;
+  }
+  .navbar-nav > li > a,.navbar-nav > li > a:hover, .navbar-nav > li > a:focus  {
+	font-size: 50pt;
+  }
+}
+
 #navbar {
 	padding-right: 3em;
 	padding-left: 0;
-}
-
-#nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
-#nav.detached {    
-    position:static;
-    top: 30px;
+	padding-top: 1em;
 }
 
 .icon-bar {
@@ -140,6 +159,7 @@ body {
 
 #main-container {
 	margin-bottom: 20em;
+	margin-top: 2em;
 }
 
 .nav-tabs li:nth-child(2) {

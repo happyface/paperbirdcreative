@@ -30,11 +30,8 @@
 	<meta name="theme-color" content="#ffffff">
   </head>
   <body>
-  	<div class="container-fluid" id="con">
-		&nbsp;
-	</div>
 	<div id="nav-wrapper">
-			<div class="navbar navbar-static-top" id="nav"  data-spy="affix" data-offset-top="560">
+			<div class="navbar navbar-fixed-top" id="nav">
 				<div class="navbar-header">
 				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -58,6 +55,10 @@
 				</div>
 			</div>
 	</div>
+	<div class="container-fluid" id="con">
+		&nbsp;
+	</div>
+	
 
 	<div class="container-fluid" id="main-container">	
 		<div class="row">
@@ -71,20 +72,57 @@
 				</div>
 			</div>
 			<div class="col-xs-10 col-sm-9">
-				<div class="container-fluid">
-					<div id="links">
-						<img id="large-image" style="display: none;" />
-							<a href="#" onclick="enlargify('public/images/portfolio/Chrysanthemum.jpg');" title="Chrysanthemum" data-gallery>
-								<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382612.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
-							<a href="#" onclick="enlargify('public/images/portfolio/Desert.jpg');" title="Desert" data-gallery>
-								<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382613.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
-							<a href="#" onclick="enlargify('public/images/portfolio/Hydrangeas.jpg');" title="Hydrangeas" data-gallery>
-								<img class="thumb"src="http://www.makeathumbnail.com/thumbnails/image382614.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
-							<a href="#" onclick="enlargify('public/images/portfolio/Jellyfish.jpg');" title="Jellyfish" data-gallery>
-								<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382616.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
-							<a href="#" onclick="enlargify('public/images/Penguins.jpg');" title="Penguins" data-gallery>
-								<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382617.jpg" alt="Thumbnail provided by MakeAThumbnail.com" /></a>
+				<div class="container-fluid" id="thumbnails">
+					<div id="links" class= "text-center">
+						<span id="large-image-container"  style="display: none;" />
+							<span class="left-right" onclick="goBack()">Left</span>
+							<img id="large-image" />
+							<span class="left-right" onclick="goBack()">Right</span>
+						</span>
+						<span class="thumb-link" onclick="enlargify('public/images/portfolio/Chrysanthemum.jpg');" title="Chrysanthemum" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382612.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Desert.jpg');" title="Desert" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382613.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Hydrangeas.jpg');" title="Hydrangeas" data-gallery>
+							<img class="thumb"src="http://www.makeathumbnail.com/thumbnails/image382614.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Jellyfish.jpg');" title="Jellyfish" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382616.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Penguins.jpg');" title="Penguins" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382617.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Chrysanthemum.jpg');" title="Chrysanthemum" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382612.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Desert.jpg');" title="Desert" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382613.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Hydrangeas.jpg');" title="Hydrangeas" data-gallery>
+							<img class="thumb"src="http://www.makeathumbnail.com/thumbnails/image382614.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Jellyfish.jpg');" title="Jellyfish" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382616.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Penguins.jpg');" title="Penguins" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382617.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Desert.jpg');" title="Desert" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382613.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Hydrangeas.jpg');" title="Hydrangeas" data-gallery>
+							<img class="thumb"src="http://www.makeathumbnail.com/thumbnails/image382614.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Jellyfish.jpg');" title="Jellyfish" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382616.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
+						<span class="large-image" onclick="enlargify('public/images/portfolio/Penguins.jpg');" title="Penguins" data-gallery>
+							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382617.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						</span>
 					</div>
+					<span id="thumbnail" onclick="goBack()">Back</span>
 				</div>
 			</div>
 		</div>
