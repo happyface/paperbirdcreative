@@ -31,39 +31,39 @@
   </head>
   <body>
 	<div id="nav-wrapper">
-			<div class="navbar navbar-fixed-top" id="nav">
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				</div>
-				<div id="navbar" class="collapse navbar-collapse">
-				  <ul class="nav navbar-nav navbar-right">
-					<li class="active">
-					  <a class="link-slashes" href="index.html">Work&nbsp;&nbsp;</a>
-					</li>
-					<li>
-					  <a class="link-slashes" href="resume.html">&nbsp;&nbsp;Resum&egrave;&nbsp;&nbsp;</a>
-					</li>
-					<li>
-					  <a href="about.html">&nbsp;&nbsp;About</a>
-					</li>
-				  </ul>
-				</div>
+		<div class="navbar navbar-fixed-top" id="nav">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
 			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="active">
+				  <a class="link-slashes" href="index.html">Work&nbsp;&nbsp;</a>
+				</li>
+				<li>
+				  <a class="link-slashes" href="resume.html">&nbsp;&nbsp;Resum&egrave;&nbsp;&nbsp;</a>
+				</li>
+				<li>
+				  <a href="about.html">&nbsp;&nbsp;About</a>
+				</li>
+			  </ul>
+			</div>
+		</div>
 	</div>
 	<div class="container-fluid" id="con">
-		&nbsp;
+		<img class="center-block" src="../public/images/logos/Splash.gif" alt="Paperbird Creative Splash Logo" />
 	</div>
 	
 
 	<div class="container-fluid" id="main-container">	
-		<div class="row">
-			<div class="col-xs-2 col-sm-3">
-				<img class="center-block" src="../public/images/main_logo.png" alt="Paperbird Creative Logo" />
+		<div class="row" id="content-row">
+			<div class="col-xs-20" id="left-column">
+				<img id="paperbird-main-logo" class="center-block" src="../public/images/logos/mainLogo.png" alt="Paperbird Creative Logo" />
 				<div class="bottom-aligned-text">
 					  ALISSA PENDORF <br />
 					  GRAPHIC DESIGNER <br />
@@ -71,58 +71,82 @@
 					  LET'S BE IN TOUCH
 				</div>
 			</div>
-			<div class="col-xs-10 col-sm-9">
+			<div class="col-xs-80">
 				<div class="container-fluid" id="thumbnails">
-					<div id="links" class= "text-center">
-						<span id="large-image-container"  style="display: none;" />
-							<span class="left-right" onclick="goBack()">Left</span>
-							<img id="large-image" />
-							<span class="left-right" onclick="goBack()">Right</span>
+					<div class="row" id="large-image-container">
+						<div class="left-right table-col">
+							<div id="left-arrow" onclick="goBack()">
+							</div>
+						</div>
+						<div class="col-xs-7 table-col">
+							<div id="large-image"></div>
+						</div>
+						<div class="col-xs-1 left-right table-col">
+							<div id="right-arrow" onclick="goBack()">
+							</div>
+						</div>
+						<div class="col-xs-3 table-col">
+							<div class="row">
+								<div class="col-xs-10" id="image-title">
+									<h2>Title</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-10">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu neque velit. 
+									Ut placerat facilisis sagittis. 
+									Phasellus interdum felis nec sapien accumsan, id consequat mi vestibulum. 
+									Fusce cursus euismod mauris, eget ornare diam cursus semper. 
+									Duis pharetra ipsum consectetur massa commodo, eget consectetur justo blandit. 
+									Quisque tortor sapien, placerat ultrices ipsum ut, congue facilisis dolor. 
+									Ut a diam mollis, ultricies lectus id, tristique justo. 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-8 text-right">
+							<span id="thumbnail" onclick="goBack()">Back</span>
+						</div>
+					</div>
+					<div id="links" class="text-center">
+						<span class="thumb-link" onclick="enlargify('public/images/portfolio/pTrump.png');" title="Trump" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tTrump.png" alt="Trump Thumbnail" />
 						</span>
-						<span class="thumb-link" onclick="enlargify('public/images/portfolio/Chrysanthemum.jpg');" title="Chrysanthemum" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382612.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Desert.jpg');" title="Desert" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382613.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Hydrangeas.jpg');" title="Hydrangeas" data-gallery>
-							<img class="thumb"src="http://www.makeathumbnail.com/thumbnails/image382614.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Jellyfish.jpg');" title="Jellyfish" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382616.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Penguins.jpg');" title="Penguins" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382617.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Chrysanthemum.jpg');" title="Chrysanthemum" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382612.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Desert.jpg');" title="Desert" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382613.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Hydrangeas.jpg');" title="Hydrangeas" data-gallery>
-							<img class="thumb"src="http://www.makeathumbnail.com/thumbnails/image382614.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Jellyfish.jpg');" title="Jellyfish" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382616.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Penguins.jpg');" title="Penguins" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382617.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Desert.jpg');" title="Desert" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382613.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
-						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Hydrangeas.jpg');" title="Hydrangeas" data-gallery>
-							<img class="thumb"src="http://www.makeathumbnail.com/thumbnails/image382614.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
-						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Jellyfish.jpg');" title="Jellyfish" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382616.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
-						</span>
-						<span class="large-image" onclick="enlargify('public/images/portfolio/Penguins.jpg');" title="Penguins" data-gallery>
-							<img class="thumb" src="http://www.makeathumbnail.com/thumbnails/image382617.jpg" alt="Thumbnail provided by MakeAThumbnail.com" />
+						<span class="large-image" onclick="enlargify('public/images/portfolio/pGrey.png');" title="Grey" data-gallery>
+							<img class="thumb" src="public/images/portfolio/thumbnails/tGrey.png" alt="Grey Thumbnail" />
 						</span>
 					</div>
-					<span id="thumbnail" onclick="goBack()">Back</span>
 				</div>
 			</div>
 		</div>

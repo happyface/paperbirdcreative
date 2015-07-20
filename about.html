@@ -1,22 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Paperbird Creative</title>
+    <title>Paper Bird Creative</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='shortcut icon' href='/images/paperbirdcreative_fav.jpg'>
-    <script src="../public/javascript/jquery.min.js"></script>
-    <script> 
-       $(function(){ $("head").load("head.html") });
-	</script>
+		<!-- <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css"> -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-theme.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../public/css/paperbird.css">
+	<!-- <script src="../public/javascript/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="../public/css/bootstrap-image-gallery.min.css">
 	
-    <script> 
-		$(function(){
-		  $("#includedContent").load("../layout.html"); 
-		});
-    </script> 
+	<link rel="shortcut icon" href="../public/images/Favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
   </head>
   <body>
-	<div id="includedContent">
-		About
+	<div id="nav-wrapper">
+		<div class="navbar navbar-fixed-top" id="nav">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="active">
+				  <a class="link-slashes" href="index.html">Work&nbsp;&nbsp;</a>
+				</li>
+				<li>
+				  <a class="link-slashes" href="resume.html">&nbsp;&nbsp;Resum&egrave;&nbsp;&nbsp;</a>
+				</li>
+				<li>
+				  <a href="about.html">&nbsp;&nbsp;About</a>
+				</li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="con">
+		<img class="center-block" src="../public/images/logos/Splash.gif" alt="Paperbird Creative Splash Logo" />
+	</div>
+	
+
+	<div class="container-fluid" id="main-container">	
+		<div class="row" id="content-row">
+			<div class="col-xs-20" id="left-column">
+				<img id="paperbird-main-logo" class="center-block" src="../public/images/logos/mainLogo.png" alt="Paperbird Creative Logo" />
+				<div class="bottom-aligned-text">
+					  ALISSA PENDORF <br />
+					  GRAPHIC DESIGNER <br />
+					  ajp2487@gmail.com <br />
+					  LET'S BE IN TOUCH
+				</div>
+			</div>
+			<div class="col-xs-80">
+				<div class="container-fluid" id="about-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Vestibulum malesuada fringilla massa vel congue. 
+					Vivamus a pellentesque tellus. Fusce in hendrerit massa. 
+					Pellentesque sit amet velit dapibus, gravida eros et, sodales erat. 
+					Fusce mollis tellus venenatis tellus pretium vulputate. 
+					Maecenas laoreet posuere odio ac sollicitudin. 
+					Pellentesque sed sollicitudin metus. Mauris elementum lorem at dolor efficitur ornare. Vivamus fermentum, turpis vitae pellentesque gravida, leo dui bibendum nisi, non sagittis risus lacus at ex. Curabitur pretium et neque vitae porta. Curabitur elementum velit sit amet imperdiet hendrerit. Fusce massa nulla, malesuada quis elementum ac, tempor in odio. Vivamus consectetur mauris at ipsum sollicitudin, sed bibendum risus interdum. Ut lacinia a massa sed viverra.
+					Duis et lacinia metus. Donec eu vestibulum turpis. <br /> 
+					Morbi sodales, leo aliquam faucibus congue, odio magna laoreet nibh, eu convallis diam dolor sed ligula. 
+					Nulla facilisi. 
+					Nulla pharetra massa quis urna finibus, elementum eleifend enim hendrerit. 
+					Cras scelerisque tristique libero, ut condimentum dui hendrerit eget. 
+					Curabitur felis justo, volutpat at mauris ac, suscipit pulvinar leo. 
+					In hendrerit vel elit in laoreet. Nam tristique vehicula quam, ut aliquam turpis vehicula vel.
+				</div>
+			</div>
+		</div>
 	</div>
   </body>
+</html>
